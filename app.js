@@ -50,11 +50,11 @@ app.get("/posts/:postTitle", function(req, res){
   
   allPosts.forEach(function(allPost){
     let checkTitle = _.lowerCase(allPost.title);  
-    let postContent = allPost.content;
+    
     if(checkTitle === title){
       res.render("post.ejs", {
         PostTitle: allPost.title,
-        PostContent: postContent
+        PostContent: allPost.content
       });
     }
     
