@@ -1,0 +1,10 @@
+<%- include('partials/header') -%>
+<h1>Home page</h1>
+
+<p><%= appHome %></p>
+<% Posts.forEach(function(Posts){ %>
+        <h1><%= Posts.title %></h1>
+        <p><%= Posts.content %></p>
+<%})%>
+
+<%- include('partials/footer') -%>
