@@ -15,6 +15,20 @@
     color: #F7E1BE !important;
 }
 
+#blm-donate {
+    color: #5e80f7;
+    text-decoration: none;
+}
+
+#blm-banner {
+    text-align: center;
+    background: #332211;
+    color: #f1f1f1;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
 .footer-padding {
 	padding-bottom: 60px;
 }
