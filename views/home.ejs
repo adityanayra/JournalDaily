@@ -2,9 +2,17 @@
 <h1>Home page</h1>
 
 <p><%= appHome %></p>
-<% Posts.forEach(function(Posts){ %>
-        <h1><%= Posts.title %></h1>
-        <p><%= Posts.content %></p>
+<% Posts.forEach(function(Post){ %>
+        
+        <h1><%= Post.title %></h1>
+        <% if(Post.content.length > 50){ %>
+                <% let PostContent = Post.content; %>
+                <p><%= Post.content.substring(0, 50) + "..." %>
+                <a href="/posts/:<%= Post.title %>">Read more</a>
+                </p>
+        <% }else{ %>
+                <p><%= Post.content%></p>
+        <% } %>
 <%})%>
 
 <%- include('partials/footer') -%>

@@ -60,7 +60,7 @@ app.get("/posts/:postTitle", function(req, res){
     
   });
 
-})
+});
 
 app.post("/compose", function(req, res){
   const post = {
@@ -71,6 +71,8 @@ app.post("/compose", function(req, res){
   res.redirect("/");
   
 })
+
+
 
 app.listen(3030, function() {
   console.log("Server started on port 3000");
